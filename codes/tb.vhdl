@@ -22,7 +22,7 @@ architecture search4coffe of me_tb is
     signal srst : std_logic := '1';
     signal sclk : std_logic := '0';
 
-    -- sinal de observa��o
+    -- sinal de observacao
     signal m100, m50, botao : std_logic := '0';
     signal troco, cofre, bloqueio, comida : std_logic := '0';
 
@@ -32,7 +32,7 @@ architecture search4coffe of me_tb is
 begin
     sclk <= not(sclk) after cicloClock / 2;
 
-    -- A M�quina de Estado:
+    -- A Maquina de Estado:
     u_me : me port map(srst, sclk, m100, m50, botao, troco, cofre, bloqueio, comida);
 
     tb : process
