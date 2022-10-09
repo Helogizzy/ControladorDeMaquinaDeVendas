@@ -1,4 +1,4 @@
--- Fun��o de Sa�da do Estado Atual --
+-- Funcao de Saida do Estado Atual --
 
 library ieee;
 use ieee.std_logic_1164.all;
